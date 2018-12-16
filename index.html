@@ -3,65 +3,77 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main-style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logotip">
-          <img src="img/logo.svg" width="642" height="260" alt="Логотип магазина">
+          <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина">
         </a>
-        <ul class="site-navigation">
+        <ul class="site-navigation list-style link-color">
           <li><a class="main-menu" href="catalog.html">Каталог</a></li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О компании</a></li>
         </ul>
-        <input type="text" name="поиск">
-        <button class="footer-searh">поиск</button>
-        <ul class="user-navigation">
-          <li>
-            <a class="user-input" href="#">Вход</a>
-          </li>
+        <div class="header-searh">
+          <form>
+              <input type="text" name="поиск" class="input-searh">
+              <button type="submit" class="header-searh-button">поиск</button>
+          </form>
+        </div>
+        <ul class="user-navigation list-style">
+            <li class="user-navigation-li">
+                <a class="user-input" href="#">Вход</a>
+            </li>
         </ul>
-        <a href="#" class="footer-basket">Корзина</a>
+        <div class="basket-none">
+            <a href="#" class="header-basket-none">Пусто</a>
+        </div>
       </nav>
   </header>
     <main>
       <section class="main-information">
         <h2>Магазин Глэйси - это онлайн - и офлайн - магазин по продаже мороженного собственного производства </h2>
-        <ul>
-          <li>Все наше мороженое изготавливается на собственном производстве, 
+        <ul class="main-info list-style">
+          <li class="main-info1">Все наше мороженое изготавливается на собственном производстве, 
            с использованием современного оборудования и проверенных временем технологий.
           </li>
-          <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. 
-           Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. 
+          <li class="main-info2">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний,
+              с которыми нас связывает долговременное сотрудничество.
           </li>
-          <li>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний,
-           с которыми нас связывает долговременное сотрудничество.
+          <li class="main-info3">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. 
+              Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
           </li>
-          <li>
-           Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, 
+          <li class="main-info4">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, 
            который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
            </li>
         </ul>
       </section>
-      <article class="main-newsblog">
-        <h3>Новое в нашем блоге</h3>
-        <a href="#">
-          <h2>10 способов сервировки фруктовых щербетов к столу</h2>
+      <article class="main-newsblog link-color">
+        <h3 >Новое в нашем блоге</h3>
+        <a href="#"><p>10 способов сервировки<br>
+        фруктовых щербетов к<br>
+        столу</p>
         </a>
-        <img src="http://placehold.it/150x100" class="main-newsblog-img" alt="щербет с клубникой">
+        
       </article>
       <section class="main-mailing">
         <h2 class="visually-hidden">рассылка</h2>
         <p>
-          Подпишитесь на нашу рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит.
-          Обещаем не спамить и не слать всякой ненужной  ерунды. Честно=)
+          Подпишитесь на нашу рассылку и будьте всегда в курсе<br>
+          всего самого вкусного, что у нас происходит.Обещаем не спамить<br>
+          и не слать всякой ненужной  ерунды. Честно=)
         </p>
-        <input type="text" name="электронная почта">
-        <button type="button" class="button-mailing">отправить</button>
+        <form class="subscription">
+          <input type="text" name="электронная почта" placeholder="Электронная почта">
+          <button type="button" class="button-mailing">Отправить</button>
+        </form>
       </section>
       <section class="modal modal-catalog">
-        <ul>
+        <ul class="list-style link-color">
           <li><a href="#">Новинки</a></li>
           <li><a href="catalog.html">Сливочное</a></li>
           <li><a href="#">Щербет</a></li>
@@ -81,7 +93,7 @@
           <button class="batton" type="submit">Войти</button>
           
         </form>
-        <p class="help"> 
+        <p class="help link-color"> 
           <a href="#">Забыли пароль?</a><br>
           <a href="#">Новая регистрация</a>
       </section>
@@ -104,27 +116,31 @@
       </section>
     </main>
     <footer>
-      <div>
-      <ul>
-        <li><a class="social-botton" href="#">Твиттер</a> </li>
-        <li><a class="social-botton" href="#">Инстаграм</a> </li>
-        <li><a class="social-botton" href="#">Фейсбук</a> </li>
-        <li><a class="social-botton" href="#">Вконтакте</a> </li>
-      </ul>
-    </div>
-    <div>
-        <ul>
-            <li><a class="footer-like" href="#">Для поставщиков</a> </li>
-            <li><a href="#">Наши документы</a> </li>
-            <li><a href="#">О производстве</a> </li>
-            <li><a href="#">Экологические стандарты</a> </li>
-          </ul>
-    </div>
-    <p class="footer-copyright">
-        <b>Сделанно в </b> 
-        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-        <b class="simbol">2017</b>
-      </p>
+        <div class="footer-social-link">
+            <ul class="social-button">
+              <li class="social-button-tw"><a href="#">Твиттер</a> </li>
+              <li class="social-button-inst"><a href="#">Инстаграм</a> </li>
+              <li class="social-button-fb"><a href="#">Фейсбук</a> </li>
+              <li class="social-button-vk"><a href="#">Вконтакте</a> </li>
+            </ul>
+          </div>
+          <div class="footer-links">
+              <img src="img/heart.svg">
+              <ul class="footer-link link-color">
+                  <li class="heart"><a  href="#">Для поставщиков</a> </li>
+                  <li><a href="#">Наши документы</a> </li>
+                  <li><a href="#">О производстве</a> </li>
+                  <li><a href="#">Экологические стандарты</a> </li>
+                </ul>
+          </div>
+          <p class="footer-copyright link-color">
+              <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/logo-htmlacademy.svg" height="38" width="107">
+              </a>
+              <b>Сделанно в </b> 
+              <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+              <b class="symbol">&#169 2017</b>
+            </p>
     </footer>
 
     

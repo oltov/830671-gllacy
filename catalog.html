@@ -3,151 +3,169 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main-style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
         <nav class="main-navigation">
             <a class="logo" href="index.html">
-                <img src="img/logo.svg" width="642" height="260" alt="Логотип магазина">
+                <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина">
             </a>
-            <ul class="site-navigation">
-                <li><a class="site-navigation-current" href="catalog.html">Каталог</a></li>
-                <li><a href="#">Доставка и оплата</a></li>
-                <li><a href="#">О компании</a></li>
+            <ul class="site-navigation list-style">
+                <li><a class="site-navigation-current" href="#">Каталог</a></li>
+                <li><a class="none" href="#">Доставка и оплата</a></li>
+                <li><a class="none" href="#">О компании</a></li>
             </ul>
-            <input type="text" name="поиск">
-             <button class="footer-searh">поиск</button>
-            <ul class="user-navigation">
-                <li>
+            <div class="header-searh">
+                <form>
+                    <input type="text" name="поиск" class="input-searh">
+                    <button type="submit" class="header-searh-button">поиск</button>
+                </form>
+            </div>
+            <ul class="user-navigation list-style">
+                <li class="user-navigation-li">
                     <a class="user-input" href="#">Вход</a>
                 </li>
             </ul>
-            <a href="#" class="header-basket">Корзина</a>
+            <div class="basket">
+                <a href="#" class="header-basket">2 товара</a>
+            </div>
         </nav>
     </header>
     <main>
-        <h2 class="name-catalog" >Сливочное мороженое</h2>
-        <div class="breadcrumbs">
-            <ul>
+        
+        <div class="breadcrumbs link-color">
+            <ul class="list-style">
                 <li class="arrow-direction"><a href="index.html">Главная</a> </li>
                 <li class="arrow-direction" ><a href="catalog.html">Каталог</a> </li>
-                <li><a >Сливочное</a> </li>
+                <li>Сливочное </li>
             </ul>
-        </div>    
-            <p class="time-telefon-number">
-                С 10 до 20, ежедневно<br>
-                8 812 450-25-25    
-            </p>
-            <h2 class="catalog" >Сливочное мороженое</h2>
+        </div> 
+        <div class="time-telefon-number">   
+            <p class="time-work">С 10 до 20, ежедневно</p>
+            <p class="telefon-number">8 812 450-25-25</p>
+        </div>
+        
+        <h2 class="name-catalog" >Сливочное мороженое</h2>
         
         <ul class="catalog-item">
             <li>
                 <img src="img/orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                <b>310р</b>
+                <b>310₽</b>
                 <span class="weight">/кг</span>
                 <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                 <button type="button">Быстрый просмотр</button>
             </li>
             <li>
                 <img src="img/choco.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-                <b>380р</b>
+                <b>380₽</b>
                 <span class="wight">/кг</span>
                 <a href="#">Сливочно-кофейное с кусочками шоколада</a>
                 <button type="button">Быстрый просмотр</button>
             </li>
             <li>
                 <img src="img/strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                <b>355р</b>
+                <b>355₽</b>
                 <span class="wight">/кг</span>
                 <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 <button type="button">Быстрый просмотр</button>
             </li>
             <li>
                 <img src="img/cream.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                <b>415р</b>
+                <b>415₽</b>
                 <span class="wight">/кг</span>
                 <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 <button type="button">Быстрый просмотр</button>
             </li>
             <li>
                 <img src="img/cowberry.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                <b>325р</b>
+                <b>325₽</b>
                 <span class="wight">/кг</span>
                 <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 <button type="button">Быстрый просмотр</button>
             </li>
             <li>
                 <img src="img/blueberries.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                <b>410р</b>
+                <b>410₽</b>
                 <span class="wight">/кг</span>
                 <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 <button type="button">Быстрый просмотр</button>
             </li>
             <li>
                 <img src="img/lemon.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                <b>375р</b>
+                <b>375₽</b>
                 <span class="wight">/кг</span>
                 <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 <button type="button">Быстрый просмотр</button>
             </li>
             <li>
                 <img src="img/chocolate_chips.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                <b>320р</b>
+                <b>320₽</b>
                 <span class="wight">/кг</span>
                 <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 <button type="button">Быстрый просмотр</button>
             </li>
             <li>
                 <img src="img/vanilla.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                <b>440р</b>
+                <b>440₽</b>
                 <span class="wight">/кг</span>
                 <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 <button type="button">Быстрый просмотр</button>
             </li>
             <li>
                 <img src="img/menthol.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                <b>435р</b>
+                <b>435₽</b>
                 <span class="wight">/кг</span>
                 <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 <button type="button">Быстрый просмотр</button>
             </li>
             <li>
                 <img src="img/dark_choco.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                <b>355р</b>
+                <b>355₽</b>
                 <span class="wight">/кг</span>
                 <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 <button type="button">Быстрый просмотр</button>
             </li>
             <li>
                 <img src="img/mint.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                <b>420р</b>
+                <b>420₽</b>
                 <span class="wight">/кг</span>
                 <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 <button type="button">Быстрый просмотр</button>
             </li>
         </ul>
+        <section class="items-in-basket">
+            <h3 class="visually-hidden">Оформление заказа</h3>
+            
+        </section>
     </main>
     <footer>
-            <div>
-            <ul>
-              <li><a class="social-botton" href="#">Твиттер</a> </li>
-              <li><a class="social-botton" href="#">Инстаграм</a> </li>
-              <li><a class="social-botton" href="#">Фейсбук</a> </li>
-              <li><a class="social-botton" href="#">Вконтакте</a> </li>
+            <div class="footer-social-link">
+            <ul class="social-button">
+              <li class="social-button-tw"><a href="#">Твиттер</a> </li>
+              <li class="social-button-inst"><a href="#">Инстаграм</a> </li>
+              <li class="social-button-fb"><a href="#">Фейсбук</a> </li>
+              <li class="social-button-vk"><a href="#">Вконтакте</a> </li>
             </ul>
           </div>
-          <div>
-              <ul>
-                  <li><a class="footer-like" href="#">Для поставщиков</a> </li>
+          <div class="footer-links">
+              <img src="img/heart.svg">
+              <ul class="footer-link link-color">
+                  <li class="heart"><a  href="#">Для поставщиков</a> </li>
                   <li><a href="#">Наши документы</a> </li>
                   <li><a href="#">О производстве</a> </li>
                   <li><a href="#">Экологические стандарты</a> </li>
                 </ul>
           </div>
-          <p class="footer-copyright">
+          <p class="footer-copyright link-color">
+              <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/logo-htmlacademy.svg" height="38" width="107">
+              </a>
               <b>Сделанно в </b> 
-              <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-              <b class="symbol">2017</b>
+              <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+              <b class="symbol">&#169 2017</b>
             </p>
           </footer>
     </body>
