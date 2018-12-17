@@ -9,10 +9,11 @@ body {
 a , body {
     color: #ffffff;
 }
-.list-style,
+.removes-list-points,
 .catalog-item li {
     list-style: none;
 }
+
 .link-color a:hover,
 .link-color a:focus {
 color: #ffbc9e;
@@ -52,7 +53,7 @@ color: #ffbc9e;
     text-decoration: none;
     background-color: rgba(255,255,255,.2);
 }
-.header-searh-button {
+.header-searсh-button {
     width: 34px;
     height: 34px;
     border-radius: 50%;
@@ -62,7 +63,7 @@ color: #ffbc9e;
     background-repeat: no-repeat;
     background-position: center;
 }
-.header-searh button:hover {
+.header-searсh button:hover {
     background-color: #ffffff;
     background-image: url(../img/icons/lupa-black.png)
 }
