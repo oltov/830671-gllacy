@@ -353,3 +353,31 @@ li.heart {
 .catalog-item img {
     border-radius: 50%;
 }
+.modal-catalog .modal-catalog-list {
+    box-sizing: border-box;
+    width: 143px;
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    padding: 0px;
+    list-style: none;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.3)
+}
+.modal-catalog-list a {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #323232;
+    padding: 8px 5px 8px 22px;
+    text-decoration: none;
+    
+}
+.modal-catalog-list .number1 {
+    font-weight: 700;
+}
+.modal-catalog-list a:hover {
+    background-color: #fbded7;
+}
+.modal-catalog-list a:active {
+    background-color: #f6b5a5;
+}
