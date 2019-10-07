@@ -23,6 +23,13 @@ img {
   color: #ffffff;
 }
 
+.button-back {
+  position: fixed;
+  display: block;
+  color: aqua;
+  background-color: rgb(128, 9, 9);
+}
+
 .removes-list-points,
 .catalog-item li {
   list-style: none;
